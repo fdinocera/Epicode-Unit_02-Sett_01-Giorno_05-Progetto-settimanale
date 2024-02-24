@@ -18,30 +18,24 @@ nav {
     justify-content: space-around;
     background-color: #ffc017;
     border-bottom: 1px solid #191919;
-    position: sticky; 
+    position: sticky;
 }
 
 @keyframes fadeInAnimation {
     0% {
-        opacity: 0;
-        /* background-color: #ffc017; */
+        opacity: 0;        
     }
-
     25% {
         opacity: 0.1;
     }
-
     50% {
         opacity: 0.3;
     }
-
     75% {
         opacity: 0.7;
     }
-
     100% {
-        opacity: 1;
-        /* background-color: 'white'; */
+        opacity: 1;     
     }
 }
 
@@ -365,20 +359,73 @@ nav {
 }
 
 /*** max-width:575 ************************************************/
-@media screen and (max-width: 767) {
+@media screen and (max-width: 767px) {
 
-    #testata{
-        display: box;
-        /* justify-content: normal; */
+    #testata {
+        justify-content: flex-start;
+        position: sticky;        
+        top: 0;
     }
-    
-    #logo{
-        border: 1px solid red;
+    #logo {
+        margin-left: 1rem;
+        margin-right: 350px;
     }
-    /* #menuItems ul li:nth-last-of-type(1) {
+    #menuItems ul li:nth-of-type(1) {
         display: none;
-    } */
+    }
+    #menuItems ul li:nth-of-type(2) {
+        display: none;
+    }
+    #menuItems ul li:nth-of-type(3) {
+        display: none;
+    }
+    #menuItems ul {
+        width: 60px;
+    }
+    #t1 {
+        font-size: 6rem;
+    }
+    #t2 {
+        font-size: 1.5rem;
+    }
+    #t3 {
+        width: 160px;
+    }
+    #titolo {
+        margin-left: 40px;
+    }
+    #container {
+        height: 500px;
+    }
+    #mainPage {
+        flex-direction: column-reverse;
+    }
+    #ftBox {
+        width: 600px;
+    }
+    #ftFooter {
+        margin-bottom: 30px;
+        position: static;
+    }
+    .nTesto {
+        font-size: 1em;
+        width: 320px;
+        margin-bottom: 4px;
+    }
+    .nNews {
+        width: 300px;
+    }
+    .nTitolo {
+        font-size: 1em;
+        width: 320px;
+    }    
+    .nRigaData > span{
+        font-size: 0.8em;        
+    }
+    .nBloccoUltimaRiga {        
+        justify-content: space-between;
+        width: 310px;
+    }
 
-
-
+/*** end max-width:575 ************************************************/
 }
