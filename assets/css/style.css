@@ -18,7 +18,31 @@ nav {
     justify-content: space-around;
     background-color: #ffc017;
     border-bottom: 1px solid #191919;
-    position: sticky;
+    position: sticky; 
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        /* background-color: #ffc017; */
+    }
+
+    25% {
+        opacity: 0.1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    75% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 1;
+        /* background-color: 'white'; */
+    }
 }
 
 #menu {
@@ -65,7 +89,6 @@ nav {
 
 #titolo {
     margin-left: 268px;
-    /* border: 1px solid red;     */
     height: 400px;
 }
 
@@ -127,9 +150,6 @@ nav {
     font-size: 2.5em;
     color: #E6E7E7;
     font-weight: bold;
-    /* margin: 25px;
-    margin-top: 0;    
-    margin-left: 0; */
 }
 
 .trendingArticolo {
@@ -209,7 +229,6 @@ nav {
     width: 610px;
     margin-bottom: 10px;
     font-size: 1.2em;
-    /* border: 1px solid green; */
 }
 
 .nBloccoUltimaRiga {
@@ -329,15 +348,37 @@ nav {
     display: flex;
     flex-wrap: wrap;
     color: #757575;
-    margin-top:20px;
+    margin-top: 20px;
     width: 410px;
 }
 
-#ftFondo span {    
+#ftFondo span {
     margin-right: 10px;
     margin-bottom: 10px;
 }
 
-footer{
+#ftFooter {
     margin-left: 40px;
+    position: sticky;
+    top: 100px;
+    align-self: flex-start;
+}
+
+/*** max-width:575 ************************************************/
+@media screen and (max-width: 767) {
+
+    #testata{
+        display: box;
+        /* justify-content: normal; */
+    }
+    
+    #logo{
+        border: 1px solid red;
+    }
+    /* #menuItems ul li:nth-last-of-type(1) {
+        display: none;
+    } */
+
+
+
 }
