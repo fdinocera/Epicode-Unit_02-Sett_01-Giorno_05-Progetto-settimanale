@@ -7,7 +7,7 @@ body {
 
 nav {
     position: fixed;
-    margin-top: -10px;    
+    margin-top: -10px;
     width: 100%;
 }
 
@@ -16,7 +16,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-color: #ffc017;
-    border-bottom: 1px solid #191919; 
+    border-bottom: 1px solid #191919;
 }
 
 @keyframes fadeInAnimation {
@@ -378,7 +378,6 @@ nav {
 }
 
 
-
 /*** max-width:575 ************************************************/
 @media screen and (max-width: 767px) {
 
@@ -388,7 +387,7 @@ nav {
 
     #menu {
         margin-right: 50px;
-    }    
+    }
 
     #mVociPulsante ul li {
         margin: 0;
@@ -428,7 +427,7 @@ nav {
     }
 
     #mainPage {
-        flex-direction: column-reverse;        
+        flex-direction: column-reverse;
     }
 
     #ftBox {
@@ -491,5 +490,89 @@ nav {
     .singolaNews {
         justify-content: space-between;
     }
+
     /*** end max-width:575 ************************************************/
+}
+
+/*** max-width: 1199px (tablet) ***************************************/
+@media screen and (max-width: 1199px) {
+
+    #logo {
+        margin-left: 50px;
+    }
+
+    #menu {
+        margin-right: 50px;
+    }
+
+    #containerTitolo {
+        margin-right: 50px;
+    }
+
+    #titolo {
+        margin-left: 50px;
+    }
+
+    .boxTrending {
+        width: 400px;
+    }
+
+    #mainPage {
+        flex-flow: column-reverse;
+    }
+
+    .boxTrending {
+        width: 450px;
+    }
+
+    .data {
+        justify-content: space-between;
+    }
+
+    .data img {
+        display: none;
+    }
+
+    #ftFooter {
+        position: static;
+        top: 100px;
+        align-self: flex-start;
+        width: 100%;
+        margin-left: 0;        
+    }
+
+    #ftBox {
+        width: 100%;
+    }
+
+    #ftFondo {
+        width: 100%;
+    }
+
+    #news {
+        margin-right: 0;
+    }
+
+    .singolaNews {
+        justify-content: space-between;
+    }
+    .nNews{
+        margin-right: 0;
+        width: 730px;
+    }
+    .nTitolo{
+        width: 100%;
+    }
+    .nTesto{
+        width: 100%;
+    }
+    .nBloccoUltimaRiga{
+        width: 100%;
+    }
+    #t3{
+        font-size: 1.5em;
+    }
+
+
+    /*** end max-width: 1199px ********************************************/
 }
